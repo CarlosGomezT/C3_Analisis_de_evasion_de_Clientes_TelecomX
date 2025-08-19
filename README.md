@@ -1,7 +1,7 @@
 
 ---
 
-# 📊 **Análisis de Machine Learning para   en Telecom X**
+# 📊 **Análisis con Machine Learning para detectar el abandono en Telecom X**
 
 ---
 
