@@ -1,7 +1,7 @@
 
 ---
 
-# 📊 **Análisis de Churn en Telecom X**
+# 📊 **Análisis de Machine Learning para   en Telecom X**
 
 ---
 
@@ -11,7 +11,10 @@
 
 El siguiente análisis forma parte de un estudio ficticio por parte de mi formación como estudiante de Oracle Next Education, siendo el segundo desafío por completar para mi desarrollo como analista de datos (Data Science). 
 
-El análisis consiste en un estudio realizado por la empresa Telecom X, tras identificar una problemática donde una grande cantidad de clientes están cancelando su servicio, es necesario utilizar las herramientas de análisis de datos para identificar problemas, patrones y posibles soluciones.
+Tras un previo análisis realizado para la empresa Telecom X, se identificaron las principales causas por las cuales los clientes de la empresa estaban cancelando su servicio, utilizando herramientas de manipulación de datos y observando estadísticas pudimos inferir situaciones por las cuales los clientes estaban abandonando.
+
+Ahora nuestro trabajo consiste en crear modelos de Machine Learning con los cuales seamos capaces de detectar posibles abandonos a futuro.  Con la creación de modelos y el análisis de nuestra base de datos, se desarrollaron conclusiones para evitar el futuro abandono de los clientes, desarrollando estrategias para reducir la taza de abandonos e identificar a los clientes que son propensos a abandonar.
+
 
 Puede acceder al codigo descargando el archivo .ipynb en el repositorio o entrando al siguiente link de google collab
 
@@ -26,8 +29,10 @@ Puede acceder al codigo descargando el archivo .ipynb en el repositorio o entran
 ---
 
 
-Este proyecto es parte de un análisis realizado por Telecom X para buscar entender y afrontar la situación que enfrentan del abandono de clientes (Churn). Utiliza un repositorio proporcionado por la empresa que contiene datos importantes como los datos civiles de los clientes, servicios contratados y cuanto pagan. El cual utilizaremos para entender el comportamiento de los clientes que tienden a cancelar sus servicios con la empresa.
-El trabajo incluye desde la carga y depuración de los datos; y la generación de visualizaciones y hallazgos estratégicos que pueden servir como base para plantear soluciones al futuro.
+Este proyecto es parte de un análisis realizado por y para Telecom X donde se desarrollan modelos de aprendizaje que buscan identificar las tendencias de los clientes que son orillados a cancelar sus servicios.  Con el objetivo de reducir la cantidad de clientes que abandonan y entenderemos el comportamiento de los clientes dentro de la empresa.  De esta manera encontramos puntos débiles dentro de los servicios de la empresa y desarrollamos planes de acción.
+
+Este trabajo incluye la carga de una base de datos anteriormente depurada, procediendo a la transformación y codificación de la misma; esto con el propósito de desarrollar modelos y entrenamientos que predigan el comportamiento de los clientes.
+
 
 ---
 
@@ -35,12 +40,12 @@ El trabajo incluye desde la carga y depuración de los datos; y la generación d
 
 ---
 
-*  Procesar y limpiar el conjunto de datos para garantizar su calidad.
-*  Analizar la proporción de clientes que abandonan frente a los que permanecen.
-*  Explorar la relación entre variables demográficas, contractuales y de servicio con el churn.
-*  Detectar patrones de comportamiento y correlaciones relevantes.
-*  Formular recomendaciones que apoyen la toma de decisiones en retención de clientes.
-  
+*  Procesar y codificar el conjunto de datos para facilitar la detección de patrones.
+*  Detectar patrones de comportamiento y correlaciones relevantes en la taza de abandono.
+*  Desarrollar modelos de aprendizaje que identifiquen el comportamiento y tendencias de los clientes
+*  Predecir el posible abandono de futuros clientes y tomar medidas.
+*  Formular conclusiones y recomendaciones que apoyen la toma de decisiones en retención de clientes.
+
 ---
 
 ## 🛠 **Herramientas y Tecnologías empleadas**
@@ -49,9 +54,17 @@ El trabajo incluye desde la carga y depuración de los datos; y la generación d
 
 *  Lenguaje: Python 3
 
-*  Bibliotecas: Pandas, NumPy, Matplotlib, Seaborn
+*  Bibliotecas y manejo de advertencias: pandas, numpy, warnings 
 
-*  Entorno de trabajo: Jupyter Notebook / Google Colab
+*  Visualización: matplotlib, `seaborn, yellowbrick
+
+*  Preprocesamiento y escalamiento: MinMaxScaler
+
+*  Muestreo y balanceo de clases: SMOTE, NearMiss
+
+*  Modelos y algoritmos: DecisionTreeClassifier, KNeighborsClassifier, RandomForestClassifier, RandomForestRegressor, DummyRegressor
+
+*  Validación y optimización de modelos: train_test_split, StratifiedKFold, KFold, cross_validate, GridSearchCV
 
 ---
 
@@ -59,17 +72,15 @@ El trabajo incluye desde la carga y depuración de los datos; y la generación d
 
 ---
 
-*  Distribución general de churn en la base de clientes.
+*  Distribución general de abandono en la base de clientes.
 
-*  Impacto de variables como edad, estado civil, dependientes y tipo de contrato.
+*  Distintos modelos de aprendizaje y normalización de la información.
 
-*  Comparativa entre métodos de pago y su relación con la evasión.
+*  Influencia de las variables dentro de los modelos y el testing
 
-*  Evaluación de servicios adicionales y su influencia en la permanencia.
+*  Correlaciones entre las variables y su peso final.
 
-*  Correlaciones entre variables numéricas y categóricas.
-
-*  Agrupaciones por nivel de antigüedad y valor de vida del cliente (CLV).
+*  Análisis con gráficas de Boxplot, Histogramas, Matrices de confusión y Curvas ROC
 
 ---
 
@@ -77,15 +88,15 @@ El trabajo incluye desde la carga y depuración de los datos; y la generación d
 
 ---
 
-*  Los contratos mensuales y el método de pago Electronic Check presentan mayor riesgo de cancelación.
+*  Los contratos mensuales presentan mayor riesgo de cancelación, mientras que los clientes a largo plazo son mas fieles..
 
-*  Los adultos mayores son un tipo de cliente vulnerable que tiene a recurrir al abandono.
+*  Existe una inconformidad de los usuarios por el servicio de pago digital y la fibra optica.
 
 *  Los primeros meses son el periodo más crítico para la retención.
 
 ## 📅 **Estado del Proyecto**
 
-Finalizado en:  Agosto 15 del 2025
+Finalizado en:  Agosto 19 del 2025
 
 # :alien: **Autoría** 
 Carlos de Jesús Gomez Torres
